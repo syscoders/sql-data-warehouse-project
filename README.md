@@ -33,12 +33,10 @@ These insights empower stakeholders with key business metrics, enabling strategi
 
 -----
 
-## <img width="512" height="512" alt="shield" src="https://github.com/user-attachments/assets/443f1201-4b12-402d-aa59-b8c886216f50" />
- License
+## 🛡️ License
 
 This project is licensed under the [MIT License].(LICENSE). You are free to use, modify, and share this project with proper attribution.
 
-## <img width="512" height="512" alt="image" src="https://github.com/user-attachments/assets/a146bf34-687a-4104-aad1-d9a9af2022e8" />
- About Me
+## ❇️ About Me
 
 Hi there! I'm **Data Expert**, also known as **The Analyzer**. I'm an IT professional and passionate data miner who wants to share knowledge that is more enjoyable and engaging!
