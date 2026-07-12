@@ -41,3 +41,19 @@ CREATE SCHEMA silver;
 GO
 CREATE SCHEMA gold;
 GO
+
+-- You can utilize below code to enhance the previous code starting from line 34 to 43
+-- Create SCHEMAS --> Bronze, Silver, Gold (only if they don't already exist)
+BEGIN TRY
+	IF NOT EXISTS (SELECT 1 FROM sys.schemas WHERE name = 'bronze')
+		EXEC('CREATE SCHEMA bronze');
+	IF NOT EXISTS (SELECT 1 FROM sys.schemas WHERE name = 'silver')
+		EXEC('CREATE SCHEMA silver');
+	IF NOT EXISTS (SELECT 1 FROM sys.schemas WHERE name = 'gold')
+		EXEC('CREATE SCHEMA gold');
+END TRY
+BEGIN CATCH
+	PRINT CONCAT('Schema creation failed: ', ERROR_MESSAGE());
+	THROW;
+END CATCH;
+GO
